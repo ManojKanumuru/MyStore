@@ -1,0 +1,61 @@
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:12:22.619Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:12:49.952Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:13:29.543Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:13:42.207Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:13:47.695Z"}
+{"level":"error","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:13:54.395Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:14:01.271Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:14:47.528Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:15:13.083Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:16:21.723Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:19:32.550Z"}
+{"level":"info","message":"Server info:Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:20:36.995Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T11:20:53.184Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:30:32.516Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:30:45.932Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:31:12.580Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:31:31.681Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:32:22.960Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T12:32:26.400Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:07:15.329Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:10:52.328Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:12:17.138Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:14:14.014Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:18:57.070Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:21:29.595Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:42:03.719Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:42:21.325Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:42:53.573Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:43:19.028Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:48:08.400Z"}
+{"level":"info","message":"response before exit: ${res}","timestamp":"2017-08-31T13:48:14.851Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:48:23.095Z"}
+{"level":"info","message":"response before exit: ${res}","timestamp":"2017-08-31T13:48:35.581Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:49:02.889Z"}
+{"level":"info","message":"response before exit: [object Object]","timestamp":"2017-08-31T13:49:03.523Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:49:26.266Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:49:46.735Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:49:58.871Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:50:41.815Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:50:59.940Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:51:34.168Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:52:06.087Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:54:24.265Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:54:56.341Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:56:48.992Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:56:58.565Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T13:57:12.518Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-08-31T14:13:31.898Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T14:13:32.046Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-08-31T14:14:24.823Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T14:14:24.896Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-08-31T14:14:37.092Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-08-31T14:14:37.161Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-09-01T06:31:06.000Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-09-01T06:31:06.177Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-09-01T06:33:43.376Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-09-01T06:33:43.443Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-09-01T06:34:19.307Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-09-01T06:34:19.383Z"}
+{"level":"info","message":"env is :development","timestamp":"2017-09-01T06:35:42.341Z"}
+{"level":"info","message":"Server running at http://127.0.0.1:3000/","timestamp":"2017-09-01T06:35:42.493Z"}
