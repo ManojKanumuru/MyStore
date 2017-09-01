@@ -13,16 +13,26 @@
   },
   "dependencies": {
     "angular2": "2.0.0-beta.13",
-    "systemjs": "0.19.25",
+    "systemjs": "0.19.40",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.6.6"
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.3.6",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.3.6",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "angular-in-memory-web-api": "~0.3.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
     "lite-server": "^2.1.0",
-    "typescript": "^1.8.9",
+    "typescript": "^2.5.2",
     "typings":"^0.7.11"
   }
 }

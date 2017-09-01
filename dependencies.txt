@@ -1,0 +1,30 @@
+Issues occurred while installing:-
+--------------------------------
+
+
+1. install babel dependencies
+
+2. Add git ignore and git Attributes
+
+3. install concurrently
+	npm install -g npm-windows-upgrade
+	npm install -g concurrently
+4. lite-server is not recognized as an internal or external command, operable program or      batch file.
+	
+	npm install -g typings
+	npm install -g tsd
+	npm install -g typescript
+	
+
+	if the above is not working, try with the below one
+
+	npm uninstall lite-server
+
+	npm install -g concurrently
+
+	npm install -g lite-server
+
+	npm install -g typescript
+5. cannot find name map error
+	npm install --save-dev @types/core-js
+6. error TS2304: Cannot find name 'IterableIterator'
