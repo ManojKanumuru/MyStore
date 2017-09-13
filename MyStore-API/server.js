@@ -10,21 +10,16 @@ const env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 logger.info(`env is :${env}`);
 
-let config = require('./src/commons/config.js');
+const hostname = '127.0.0.1',port = 3000;
+
+let config = require('./src/commons/config.js')[env];
 
 require('./src/commons/express.js')(app,config);
 
 require('./src/commons/routes.js')(app);
 
-const hostname = '127.0.0.1';
-const port = 3000;
+require('./src/db/mongoose.js')(config);
 
 app.listen(port, hostname, () => {
   logger.info(`Server running at http://${hostname}:${port}/`);
 });
-
-/*var config = require('./server/config/config.js')[env];
-
-require('./server/config/mongoose.js')(config);
-
-*/

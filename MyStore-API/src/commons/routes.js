@@ -2,9 +2,21 @@
 
 import logger from '../util/logger';
 
+import mongoose from 'mongoose';
+
+let userSchema = mongoose.Schema({
+	firstName : String,
+	lastName : String,
+	Email : String,
+	password: String
+});
+
+
+let user = require('./../model/userModel');
+
 module.exports = function(app){
 
-	app.get('/status', (req,res) =>{
-		res.sendStatus(200);
-	});
+	app.post('/api/users', user.createUser);
+
+	app.get('/api/userList', user.getUsers);
 }
