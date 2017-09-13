@@ -2,6 +2,8 @@
 
 import mongoose from 'mongoose';
 
+//mongoose.Promise = require('q').Promise;
+
 let Schema = mongoose.Schema;
 
 let userSchema = new Schema({
@@ -35,7 +37,7 @@ function createUser(req, res, next){
 	});
 }
 
-function getUsers(req,res){
+function getUsers(req, res, next){
 	User.find({}).exec(function(err, collection){
 		if(err){
 			res.send(err);
