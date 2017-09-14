@@ -4,25 +4,14 @@ import userModel from './../model/userModel';
 
 import q from 'q';
 
-function getUserList(req,res,next){
-
-	let onGettingUserList = (err, response) => {
-		if(err){
-			return next(err);
-		}else{
-			return next(response);
-		}
-	};
-
-	userModel.getUsers(req, onGettingUserList);
+function getUserList(req, res){
+	
+	userModel.getUsers(req, res, (err, response) => {
+		console.log("inside service response---->>>>:"+JSON.stringify(response));
+		console.log("inside service response---->>>>:"+JSON.stringify(res));
+		res.send(response);
+	});
 }
-
-/*let deferred = q.defer();
-
-userModel.getUsers().then(function(response){
-	deferred.resolve(response);
-	return deferred.promise();
-});*/
 
 module.exports = {
 	getUserList

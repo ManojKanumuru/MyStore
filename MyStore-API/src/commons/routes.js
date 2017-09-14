@@ -10,7 +10,7 @@ let userService = require('./../service/userService');
 
 module.exports = function(app){
 
-	app.post('/api/users', user.createUser);
+	app.post('/myStore/users', user.createUser);
 
-	app.get('/api/login', userService.getUserList);
+	app.get('/myStore/login', user.getUsers);// need to check with userService.getUserList
 }

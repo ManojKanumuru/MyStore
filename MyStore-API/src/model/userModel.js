@@ -2,8 +2,6 @@
 
 import mongoose from 'mongoose';
 
-//mongoose.Promise = require('q').Promise;
-
 let Schema = mongoose.Schema;
 
 let userSchema = new Schema({
@@ -24,7 +22,7 @@ function createUser(req, res, next){
 	let errmsg = {
 		error : ""
 	};
-	User.create(request, function(err, response){
+	User.create(request, (err, response)=>{
 		if(err){
 			if(err.toString().indexOf('E11000') > -1){
 				errmsg.error = 'Duplicate User';
@@ -38,7 +36,7 @@ function createUser(req, res, next){
 }
 
 function getUsers(req, res, next){
-	User.find({}).exec(function(err, collection){
+	User.find({}, (err, collection) => {
 		if(err){
 			res.send(err);
 		}else{
@@ -46,7 +44,9 @@ function getUsers(req, res, next){
 		}
 	});
 }
+
 module.exports = {
 	createUser,
 	getUsers
 }
+
