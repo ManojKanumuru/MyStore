@@ -2,6 +2,10 @@
 
 import mongoose from 'mongoose';
 
+import q from 'q';
+
+import _ from 'underscore';
+
 let Schema = mongoose.Schema;
 
 let userSchema = new Schema({
@@ -35,14 +39,19 @@ function createUser(req, res, next){
 	});
 }
 
+function processResults(response){
+	
+	let finalResult = _.pluck(response,'_id');
+	return finalResult;
+}
+
 function getUsers(req, res, next){
-	User.find({}, (err, collection) => {
-		if(err){
-			res.send(err);
-		}else{
-			res.send(collection);
-		}
-	});
+	User.find({}).then(function(results){
+	    //return processResults(results);
+	    return results;
+	}).then(function(response){
+	  	return res.send(response);
+	}).catch(next);
 }
 
 module.exports = {
