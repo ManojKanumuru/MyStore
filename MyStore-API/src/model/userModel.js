@@ -4,29 +4,28 @@ import mongoose from 'mongoose';
 
 import q from 'q';
 
-import _ from 'underscore';
+import userService from './../service/userService';
 
 let Schema = mongoose.Schema;
 
 let userSchema = new Schema({
-	firstName : String,
-	lastName : String,
+	firstName : {type:String},
+	lastName : {type:String},
 	Email : {
 		type: String,
 		unique:true
 	},
-	password: String
+	password: {type:String}
 });
 
 let User = mongoose.model('User',userSchema);
 
 function createUser(req, res, next){
-
 	let request = req.body;
 	let errmsg = {
 		error : ""
 	};
-	User.create(request, (err, response)=>{
+	User.create(req.body, function(err, response){
 		if(err){
 			if(err.toString().indexOf('E11000') > -1){
 				errmsg.error = 'Duplicate User';
@@ -34,21 +33,18 @@ function createUser(req, res, next){
 			}
 			res.send(errmsg);
 		}else{
-			res.send(response);
+			if(response){
+				res.send({"Success" : "User Created Successfully"});	
+			}else{
+				res.send({"Message" : "User Not Created"});
+			}
 		}
 	});
 }
 
-function processResults(response){
-	
-	let finalResult = _.pluck(response,'_id');
-	return finalResult;
-}
-
 function getUsers(req, res, next){
 	User.find({}).then(function(results){
-	    //return processResults(results);
-	    return results;
+	    return userService.processResults(results);
 	}).then(function(response){
 	  	return res.send(response);
 	}).catch(next);

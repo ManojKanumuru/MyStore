@@ -20,6 +20,7 @@
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.9",
     "nodemon": "1.11.0",
+    "promise-defer": "^1.0.0",
     "q": "^1.5.0",
     "underscore": "^1.8.3",
     "winston": "2.3.1"
