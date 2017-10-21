@@ -4,13 +4,21 @@ import express from 'express';
 
 let apiRoutes = express.Router();
 
-let user = require('./../model/userModel');
+import userService from './../service/userService';
 
 module.exports = function(app){
 
-	apiRoutes.post('/users', user.createUser);
+	apiRoutes.post('/users', function(req, res,next){
+		userService.createUserMethod(req).then(function(response){
+			res.send(response);
+		});
+	});
 
-	apiRoutes.get('/login', user.getUsers);
+	apiRoutes.get('/login', function(req, res,next){
+		userService.getUserDetails(req).then(function(response){
+			res.send(response);
+		});
+	});
 	
-	app.use('/mystore', apiRoutes);
+	app.use('/myStore', apiRoutes);
 }

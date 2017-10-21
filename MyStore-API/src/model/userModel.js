@@ -20,38 +20,51 @@ let userSchema = new Schema({
 
 let User = mongoose.model('User',userSchema);
 
-function createUser(req, res, next){
+function createUser(req){
+	console.log("inside create user model:");
 	let request = req.body;
 	let errmsg = {
 		error : ""
 	};
-	User.create(req.body, function(err, response){
+	let deferred  = q.defer();
+	User.create(req.body, function (err, response){
 		if(err){
+			console.log("inside err:");
 			if(err.toString().indexOf('E11000') > -1){
 				errmsg.error = 'Duplicate User';
-				res.status(400);
+				errmsg.status = 400;
 			}
-			res.send(errmsg);
+			deferred.resolve(errmsg);
 		}else{
-			if(response){
-				res.send({"Success" : "User Created Successfully"});	
-			}else{
-				res.send({"Message" : "User Not Created"});
-			}
+			console.log("inside response");
+			deferred.resolve({"Success" : "User Created Successfully"});
 		}
 	});
+	/*User.create(req.body)
+		.done( function resolveSuccess(response){
+			console.log("inside response");
+			deferred.resolve({"Success" : "User Created Successfully"});
+		}, function resolveError(err){
+			console.log("inside err:");
+			if(err.toString().indexOf('E11000') > -1){
+				errmsg.error = 'Duplicate User';
+				errmsg.status = 400;
+			}
+			deferred.reject(errmsg);
+	});*/
+	return deferred.promise;
 }
 
-function getUsers(req, res, next){
+function getUsers(req){
+	let deferred = q.defer();
 	User.find({}).then(function(results){
-	    return userService.processResults(results);
-	}).then(function(response){
-	  	return res.send(response);
-	}).catch(next);
+		console.log("db response--->>>:");
+	    deferred.resolve(results);
+	});
+	return deferred.promise;
 }
 
 module.exports = {
 	createUser,
 	getUsers
 }
-
