@@ -1,10 +1,16 @@
 'use strict';
 
+import express from 'express';
+
+let apiRoutes = express.Router();
+
 let user = require('./../model/userModel');
 
 module.exports = function(app){
 
-	app.post('/myStore/users', user.createUser);
+	apiRoutes.post('/users', user.createUser);
 
-	app.get('/myStore/login', user.getUsers);
+	apiRoutes.get('/login', user.getUsers);
+	
+	app.use('/mystore', apiRoutes);
 }
