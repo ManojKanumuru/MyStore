@@ -1,0 +1,21 @@
+{
+    "MyStoreDB": {
+        "COLLECTIONS": [
+            "Users"
+        ]
+    },
+    "Users": {
+        "COLLECTION_NAME": "Users",
+        "JSON_SCHEMA": {
+		"_id" : false,
+		"userID" : "String",
+		"firstName" : "String",
+		"lastName" : "String",
+		"Email" : {
+			"type": "String",
+			"unique":true
+		},
+	"password" : "String"
+		}
+	}
+}

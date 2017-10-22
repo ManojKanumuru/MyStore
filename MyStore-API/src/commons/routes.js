@@ -10,7 +10,7 @@ module.exports = function(app){
 
 	apiRoutes.post('/users', function(req, res,next){
 		userService.createUserMethod(req).then(function(response){
-			res.send(response);
+			res.status(response.statusCode).send(response);
 		});
 	});
 
