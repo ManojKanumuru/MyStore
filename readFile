@@ -1,0 +1,43 @@
+var fs = require('fs');
+var path = require('path');
+
+var dir = path.join(__dirname + '../../../../images/');
+//let files = fs.readdir(dir);
+let files = ["img1.jpeg","img2.png"];
+
+<div>
+	<ul>
+		<li>
+		{ files.map((file, j) =>
+		<img src={require('./../../../assets/images/' + file)} />
+		)}  
+		</li>
+	</ul>
+</div>
+
+
+
+const readDiffImage = () => {
+
+	return new Promise(function(resolve, reject){
+		
+		let files = fs.readdirSync(dir);
+
+		console.log("files", files);
+
+		if(files.length > 0){
+
+			fileName = files[0];
+
+			responseObj.fileExtension = fileName.substr((fileName.lastIndexOf('.') + 1)).toLowerCase();
+
+			responseObj.fileName = fileName;
+
+			return resolve(responseObj);
+		}else{
+			let err = {'message': 'No File Found'};
+			return reject(err);
+		}
+	});
+
+}
